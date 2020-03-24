@@ -22,9 +22,12 @@
 
  # YCM code completion for Python, C-like, and Rust
  sudo apt install libclang-8-dev
+ git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+ git clone https://github.com/nvie/vim-flake8.git
  git clone git@github.com:ycm-core/YouCompleteMe.git my_plugins/YouCompleteMe
  cd my_plugins/YouCompleteMe
  git submodule update --init --recursive
  python3 install.py --clang-completer --rust-completer
+ python3 -m pip install flake8
 
  echo "Finished installing rytse's custom addition to the Awesome Ultimate Vim configuration! Enjoy :-)"
