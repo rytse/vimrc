@@ -17,17 +17,12 @@
 
  echo "Finished installing amix's Awesome Ultimate Vim configuration! Moving on to rytse's custom stuff. Enjoy :-)"
 
- # vim tmux seamless navigation
- git clone https://github.com/christoomey/vim-tmux-navigator.git my_plugins/vim-tmux-navigator
-
- # YCM code completion for Python, C-like, and Rust
  sudo apt install libclang-8-dev
+ 
+ cd ~/.vim_runtime/my_plugins
+ git clone https://github.com/christoomey/vim-tmux-navigator.git
  git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
  git clone https://github.com/nvie/vim-flake8.git
- git clone https://github.com:ycm-core/YouCompleteMe.git my_plugins/YouCompleteMe
- cd my_plugins/YouCompleteMe
- git submodule update --init --recursive
- python3 install.py --clang-completer --rust-completer
- python3 -m pip install flake8
-
+ git clone https://github.com/Rigellute/rigel.git
+ 
  echo "Finished installing rytse's custom addition to the Awesome Ultimate Vim configuration! Enjoy :-)"
