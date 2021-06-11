@@ -24,5 +24,6 @@
  git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
  git clone https://github.com/nvie/vim-flake8.git
  git clone https://github.com/Rigellute/rigel.git
+ git clone --depth 1 https://github.com/codota/tabnine-vim
  
  echo "Finished installing rytse's custom addition to the Awesome Ultimate Vim configuration! Enjoy :-)"
